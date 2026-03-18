@@ -5,21 +5,21 @@
 class Jetscale < Formula
   desc "JetScale CLI — cloud cost optimization from the terminal"
   homepage "https://jetscale.ai"
-  version "0.2.5"
+  version "0.2.6"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Jetscale-ai/cli/releases/download/v0.2.5/jetscale_0.2.5_darwin_amd64.tar.gz"
-      sha256 "94b421194f5ccda8d43ca63ad698164577532e0bf311f22ec3b261da2b6069c9"
+      url "https://github.com/Jetscale-ai/cli/releases/download/v0.2.6/jetscale_0.2.6_darwin_amd64.tar.gz"
+      sha256 "acb6eb342e3b566c370d5e2f6395f7b89a31e0b5e98505376976e79fe9c780ae"
 
       define_method(:install) do
         bin.install "jetscale"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Jetscale-ai/cli/releases/download/v0.2.5/jetscale_0.2.5_darwin_arm64.tar.gz"
-      sha256 "2661b584fba76e40212659c8ef898e1ba8afb40e2f16562f708385b0b13e1a85"
+      url "https://github.com/Jetscale-ai/cli/releases/download/v0.2.6/jetscale_0.2.6_darwin_arm64.tar.gz"
+      sha256 "3251ebf218b1d4550a9b464b3674fce66ccaadf3926054ec551ddd89397435ac"
 
       define_method(:install) do
         bin.install "jetscale"
@@ -29,15 +29,15 @@ class Jetscale < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Jetscale-ai/cli/releases/download/v0.2.5/jetscale_0.2.5_linux_amd64.tar.gz"
-      sha256 "a09040699c66401bade87c4c96ac5aace0766bc8d5683c9803cb080239cc00e8"
+      url "https://github.com/Jetscale-ai/cli/releases/download/v0.2.6/jetscale_0.2.6_linux_amd64.tar.gz"
+      sha256 "f610b97e99045c7021630e3d75f3feec99d64e48f96220627e0abd9783cae3ff"
       define_method(:install) do
         bin.install "jetscale"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Jetscale-ai/cli/releases/download/v0.2.5/jetscale_0.2.5_linux_arm64.tar.gz"
-      sha256 "ce464cace0c193d70ebd3419bd2fea723c8dcdf973b66422ee0feb9a6a595ed4"
+      url "https://github.com/Jetscale-ai/cli/releases/download/v0.2.6/jetscale_0.2.6_linux_arm64.tar.gz"
+      sha256 "0fabdfc953eb60984612e7ab3c8be190ab662096c42b86ff3f731886f2e5095d"
       define_method(:install) do
         bin.install "jetscale"
       end
